@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#summary, #transaction-form, #transactions {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input, form select, form button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#transaction-list {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.transaction-item.income {
+    background-color: #d4edda;
+}
+
+.transaction-item.expense {
+    background-color: #f8d7da;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
